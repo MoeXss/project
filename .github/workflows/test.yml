@@ -1,0 +1,17 @@
+name: Run Selenium Tests
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t test .
+
+      - name: Run tests
+        run: docker run --rm --network selenium-net test:latest
