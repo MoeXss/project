@@ -1,6 +1,6 @@
 # QA Automation
 
-Автоматизированное тестирование UI на базе Selenium Grid + pytest.
+форк "автоматизированное тестирование UI на базе Selenium Grid + pytest."
 
 ## Стек
 - Python 3.11
